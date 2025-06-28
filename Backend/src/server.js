@@ -7,7 +7,7 @@ import job from "./config/cron.js";
 
 const app = express();
 
-// ager hum prod me hoge tabhi cron run hoga
+// ager hum prod me hoge tabhi cron run hoga.
 if(process.env.NODE_ENV === "production") job.start();
 
 //middleware
