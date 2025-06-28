@@ -13,9 +13,9 @@ app.use("/api/transactions", transactionsRoute);
 dotenv.config();
 const PORT = process.env.PORT || 5001;
 
-// app.get("/", async (req, res) => {
-//   res.send("Its working");
-// });
+app.get("/", async (req, res) => {
+  res.send("Its working");
+});
 
 initDB().then(() => {
   app.listen(PORT, () => {
