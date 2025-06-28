@@ -2,7 +2,10 @@
 
 import { useCallback, useState } from "react";
 import { Alert } from "react-native";
-const API_URL = "http://localhost:5001/api";
+
+// hum render.com ka use ker rhe hai jo humare API ko deploy kerta hai taki hum frontend me API ki data ko dekh ske.
+const API_URL = "https://wallet-backend-k2s2.onrender.com/api";
+
 export const useTransactions = (userId) => {
   const [transactions, setTransactions] = useState([]);
   const [summary, setSummary] = useState({
